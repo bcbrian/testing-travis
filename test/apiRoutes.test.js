@@ -24,4 +24,7 @@ describe("API - ROUTES", () => {
     expect(res.json.mock.calls[0][0].text).toBe(req.body.text);
     expect(res.json.mock.calls[0][0].description).toBe(req.body.description);
   });
+  it("should be false", () => {
+    expect(true).toBe(false);
+  });
 });
